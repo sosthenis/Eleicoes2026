@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Exterior 2026 · Votação confirmada · Presidente</title>
+<style>
+  :root {
+    --bg: #0c1118;
+    --card: #141c27;
+    --line: #243044;
+    --text: #e8eef6;
+    --muted: #8b9bb0;
+    --ok: #3dd68c;
+    --wait: #f5c451;
+    --off: #6b7c90;
+    --flavio: #2f6fed;
+    --lula: #e23b4a;
+    --other: #7d8ea3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: radial-gradient(1200px 500px at 80% -10%, #1a2740 0%, var(--bg) 55%);
+    color: var(--text);
+    padding: 20px 16px 48px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  header { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+  h1 { font-size: 1.35rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 0.86rem; margin: 0; }
+  .badge {
+    background: #123224; color: var(--ok); border: 1px solid #1f6b45;
+    border-radius: 999px; padding: 6px 12px; font-size: 0.78rem; font-weight: 650;
+  }
+  .grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; margin-top: 16px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px;
+  }
+  .k { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: .06em; }
+  .big { font-size: 1.7rem; font-weight: 750; margin: 4px 0 0; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-top: 12px; }
+  .name { font-weight: 700; }
+  .pct { font-variant-numeric: tabular-nums; font-weight: 750; }
+  .bar { height: 10px; background: #0d1420; border-radius: 99px; overflow: hidden; margin-top: 6px; }
+  .bar > span { display: block; height: 100%; border-radius: 99px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  th, td { text-align: right; padding: 8px 6px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .04em; }
+  .win { color: var(--ok); font-weight: 700; }
+  .pill { display: inline-block; font-size: 0.7rem; padding: 2px 7px; border-radius: 99px; }
+  .pill.ok { background: #123224; color: var(--ok); }
+  .pill.wait { background: #3a3014; color: var(--wait); }
+  .pill.off { background: #1c2430; color: var(--off); }
+  .note { color: var(--muted); font-size: 0.78rem; line-height: 1.45; margin-top: 14px; }
+  .regions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+  @media (max-width: 640px) { .regions { grid-template-columns: 1fr; } }
+  .reg { border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+  footer { margin-top: 14px; color: var(--muted); font-size: 0.75rem; }
+  a { color: #8eb6ff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Presidente · votação no exterior</h1>
+      <p class="sub">1º turno · 4 out 2026 · boletins de urna já emitidos (não é a totalização do TSE)</p>
+    </div>
+    <div class="badge">Confirmado por BU · corte ~09h45 BRT</div>
+  </header>
+
+  <div class="grid">
+    <section class="card">
+      <div class="k">Soma dos países com votação encerrada (Ásia e Oceania)</div>
+      <div class="big">44.539 votos válidos</div>
+      <p class="sub">166 boletins · 47.211 compareceram de 116.846 aptos (40,4%) · branco 1.604 · nulo 1.068</p>
+
+      <div class="row"><span class="name">22 Flávio Bolsonaro · PL</span><span class="pct">62,6% · 27.874</span></div>
+      <div class="bar"><span style="width:62.6%;background:var(--flavio)"></span></div>
+
+      <div class="row"><span class="name">13 Lula · PT</span><span class="pct">24,5% · 10.929</span></div>
+      <div class="bar"><span style="width:24.5%;background:var(--lula)"></span></div>
+
+      <div class="row"><span class="name">70 Augusto Cury · Avante</span><span class="pct">4,3% · 1.900</span></div>
+      <div class="bar"><span style="width:4.3%;background:var(--other)"></span></div>
+
+      <div class="row"><span class="name">14 Renan Santos · Missão</span><span class="pct">3,6% · 1.609</span></div>
+      <div class="bar"><span style="width:3.6%;background:var(--other)"></span></div>
+
+      <div class="row"><span class="name">55 Ronaldo Caiado · PSD</span><span class="pct">1,7% · 752</span></div>
+      <div class="bar"><span style="width:1.7%;background:var(--other)"></span></div>
+
+      <div class="row"><span class="name">30 Romeu Zema · Novo</span><span class="pct">1,2% · 542</span></div>
+      <div class="bar"><span style="width:1.2%;background:var(--other)"></span></div>
+
+      <div class="row"><span class="name">Demais 6 chapas</span><span class="pct">2,1% · 933</span></div>
+      <div class="bar"><span style="width:2.1%;background:#445066"></span></div>
+
+      <p class="note">Sem o Japão, o quadro inverte: Lula 55,7% (5.695) e Flávio 32% (3.273) nos outros 11 países. O Japão responde por cerca de 3 em cada 4 votos válidos já contados.</p>
+    </section>
+
+    <section class="card">
+      <div class="k">O que está confirmado agora</div>
+      <div class="regions">
+        <div class="reg"><span class="pill ok">BU fechado</span><div style="margin-top:8px;font-weight:700">Ásia e Oceania</div><div class="sub">12 países · 166 urnas</div></div>
+        <div class="reg"><span class="pill wait">Ainda vota</span><div style="margin-top:8px;font-weight:700">Europa, África, Américas</div><div class="sub">Lisboa, Boston, Miami, NY, Londres</div></div>
+        <div class="reg"><span class="pill off">Totalização TSE</span><div style="margin-top:8px;font-weight:700">A partir das 17h</div><div class="sub">Inclui exterior + Brasil</div></div>
+      </div>
+      <p class="note">Eleitorado no exterior: 918.876 aptos (TSE). O bloco já encerrado é 12,7% desse cadastro. Maiores colégios ainda abertos: Lisboa (103 seções), Boston (69), Porto (62), Nova York (53), Miami (51), Londres (48). Quem vota fora escolhe só presidente e vice. Vitória no 1º turno exige mais da metade dos votos válidos no país inteiro; 2º turno, se houver, em 25/10.</p>
+    </section>
+  </div>
+
+  <section class="card" style="margin-top:12px">
+    <div class="k">Por país · votos válidos · liderança no boletim</div>
+    <table>
+      <thead>
+        <tr><th>País</th><th>Status</th><th>Flávio 22</th><th>Lula 13</th><th>Válidos</th><th>Líder</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Japão</td><td><span class="pill ok">confirmado</span></td><td>24.601 (71,7%)</td><td>5.234 (15,3%)</td><td>34.318</td><td class="win">Flávio</td></tr>
+        <tr><td>Austrália</td><td><span class="pill ok">confirmado</span></td><td>2.579 (31,7%)</td><td>4.562 (56,1%)</td><td>8.130</td><td class="win">Lula</td></tr>
+        <tr><td>China (c/ Hong Kong)</td><td><span class="pill ok">confirmado</span></td><td>203 (31,1%)</td><td>367 (56,3%)</td><td>652</td><td class="win">Lula</td></tr>
+        <tr><td>Singapura</td><td><span class="pill ok">confirmado</span></td><td>92 (26,4%)</td><td>190 (54,6%)</td><td>348</td><td class="win">Lula</td></tr>
+        <tr><td>Nova Zelândia</td><td><span class="pill ok">confirmado</span></td><td>64 (19,3%)</td><td>234 (70,5%)</td><td>332</td><td class="win">Lula</td></tr>
+        <tr><td>Taiwan</td><td><span class="pill ok">confirmado</span></td><td>107 (48,9%)</td><td>77 (35,2%)</td><td>219</td><td class="win">Flávio</td></tr>
+        <tr><td>Coreia do Sul</td><td><span class="pill ok">confirmado</span></td><td>72 (33,3%)</td><td>123 (56,9%)</td><td>216</td><td class="win">Lula</td></tr>
+        <tr><td>Tailândia</td><td><span class="pill ok">confirmado</span></td><td>51 (51,5%)</td><td>40 (40,4%)</td><td>99</td><td class="win">Flávio</td></tr>
+        <tr><td>Malásia</td><td><span class="pill ok">confirmado</span></td><td>27 (32,9%)</td><td>44 (53,7%)</td><td>82</td><td class="win">Lula</td></tr>
+        <tr><td>Filipinas</td><td><span class="pill ok">confirmado</span></td><td>33 (53,2%)</td><td>26 (41,9%)</td><td>62</td><td class="win">Flávio</td></tr>
+        <tr><td>Índia</td><td><span class="pill ok">confirmado</span></td><td>26 (52,0%)</td><td>24 (48,0%)</td><td>50</td><td class="win">Flávio</td></tr>
+        <tr><td>Indonésia</td><td><span class="pill ok">confirmado</span></td><td>19 (61,3%)</td><td>8 (25,8%)</td><td>31</td><td class="win">Flávio</td></tr>
+        <tr><td><strong>Total encerrado</strong></td><td></td><td><strong>27.874 (62,6%)</strong></td><td><strong>10.929 (24,5%)</strong></td><td><strong>44.539</strong></td><td class="win">Flávio</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Placar por país: 6 a 6. Lula à frente em Austrália, China, Singapura, Nova Zelândia, Coreia do Sul e Malásia. Flávio em Japão, Taiwan, Tailândia, Filipinas, Índia e Indonésia. Em Hong Kong isolado, Flávio venceu por 105 a 99. Japão: comparecimento 36.627 de 88.293 aptos (41,5%); Nagóia 11.480×2.022, Tóquio 8.423×2.328, Hamamatsu 4.698×884.</p>
+  </section>
+
+  <footer>
+    Fonte dos boletins: levantamento do Jornal Razão sobre arquivos de urna do portal resultados.tse.jus.br até 9h45 (Brasília), 4/10/2026.
+    A totalização oficial do TSE, que inclui o exterior, só é divulgada após o fechamento das urnas no Brasil, às 17h.
+    Números parciais de imprensa não substituem o resultado oficial.
+  </footer>
+</div>
+</body>
+</html>
